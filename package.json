@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/daliduraku/js-restaurant-page/issues"
   },
-  "homepage": "https://github.com/daliduraku/js-restaurant-page#readme"
+  "homepage": "https://github.com/daliduraku/js-restaurant-page#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.3",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  }
 }

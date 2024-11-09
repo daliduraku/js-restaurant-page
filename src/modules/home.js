@@ -3,6 +3,9 @@ function loadHomePage() {
     // content div
     const content = document.getElementById('content');
 
+    // remove existing content
+    content.innerHTML = "";
+
     // main section
     const main = document.createElement('main');
 

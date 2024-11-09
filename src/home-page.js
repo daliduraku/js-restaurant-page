@@ -41,4 +41,13 @@ function createPage() {
     schedule.appendChild(hourOperations);
     main.appendChild(schedule);
 
+    // footer section
+
+    const footer = document.createElement('footer');
+    const footerText = document.createElement('p');
+    footerText.textContent = "© 2024 Peaches";
+    footer.appendChild(footerText);
+
+    
+
 }

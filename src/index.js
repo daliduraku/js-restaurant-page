@@ -7,5 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // event listeners to navigation buttons
 
     const homeButton = document.querySelector('nav button:nth-child(1)');
-    
+
+
+    homeButton.addEventListener("click", loadHomePage);
 });

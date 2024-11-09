@@ -1,5 +1,5 @@
 // home page
-function loadHomePage() {
+export function loadHomePage() {
     // content div
     const content = document.getElementById('content');
 
@@ -68,6 +68,3 @@ function loadHomePage() {
     content.appendChild(footer);
 
 }
-
-// export 
-export { loadHomePage }; 

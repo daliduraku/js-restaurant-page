@@ -46,12 +46,14 @@ function loadHomePage() {
     main.appendChild(schedule);
 
     // location 
+    const locationSection = document.createElement('section')
     const locationTitle = document.createElement('h2');
     locationTitle.textContent = "Location";
     const address = document.createElement('p');
     address.textContent = "9404 Bald Hill LaneBrooklyn, NY 11228";
-    main.appendChild(locationTitle);
-    main.appendChild(address);
+    locationSection.appendChild(locationTitle);
+    locationSection.appendChild(address);
+    main.appendChild(locationSection);
 
 
     // footer section

@@ -42,6 +42,15 @@ function loadHomePage() {
     schedule.appendChild(hourOperations);
     main.appendChild(schedule);
 
+    // location 
+    const locationTitle = document.createElement('h2');
+    locationTitle.textContent = "Location";
+    const address = document.createElement('p');
+    address.textContent = "9404 Bald Hill LaneBrooklyn, NY 11228";
+    main.appendChild(locationTitle);
+    main.appendChild(address);
+
+
     // footer section
 
     const footer = document.createElement('footer');

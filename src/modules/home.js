@@ -18,7 +18,7 @@ function createPage() {
 
     // img
     const image = document.createElement('img')
-    image.src = "./img/restaurant-home-page.jpg";
+    image.src = "images/restaurant-home-page.jpg";
     image.alt = "A view of our restaurant";
     main.appendChild(image);
 

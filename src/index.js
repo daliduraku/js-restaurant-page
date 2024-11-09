@@ -1,5 +1,6 @@
 
 import { loadHomePage } from './modules/home.js'; 
+import { loadMenuPage } from './modules/menu.js';
 
 document.addEventListener("DOMContentLoaded", () => {
     loadHomePage();

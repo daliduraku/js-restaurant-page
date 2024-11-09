@@ -48,6 +48,8 @@ function createPage() {
     footerText.textContent = "© 2024 Peaches";
     footer.appendChild(footerText);
 
-    
+    // appending main and footer to content div
+    content.appendChild(main);
+    content.appendChild(footer);
 
 }

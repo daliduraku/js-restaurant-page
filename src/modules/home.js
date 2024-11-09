@@ -1,16 +1,17 @@
 // home page
-function createPage() {
+function loadHomePage() {
     // content div
     const content = document.getElementById('content');
+
+    // main section
+    const main = document.createElement('main');
 
     // name of the restaurant
     const restaurantName = document.createElement('h1')
     restaurantName.textContent = "Peaches"
     main.append(restaurantName);
 
-    // main section
-    const main = document.createElement('main');
-
+    // description 
     const description = document.createElement('p');
     description.textContent = "Experience the finest dining with our exquisite menu crafted by amazing chefs."
     main.appendChild(description);
@@ -55,4 +56,4 @@ function createPage() {
 }
 
 // export 
-export { createPage }; 
+export { loadHomePage }; 

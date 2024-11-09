@@ -53,3 +53,6 @@ function createPage() {
     content.appendChild(footer);
 
 }
+
+// export 
+export { createPage }; 

@@ -18,6 +18,7 @@ export function loadHomePage() {
 
     // description 
     const description = document.createElement('p');
+    description.classList.add("summary")
     description.textContent = "Experience the finest dining with our exquisite menu crafted by amazing chefs."
     main.appendChild(description);
 

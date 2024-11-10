@@ -9,7 +9,8 @@
     const main = document.createElement('main');
 
     // menu section 
-    const menuSection = document.createElement('selection');
+    const menuSection = document.createElement('section');
+    menuSection.classList.add('menuSection');
     const menuTitle = document.createElement('h2'); 
     menuTitle.textContent = "Our Menu";
     menuSection.appendChild(menuTitle)

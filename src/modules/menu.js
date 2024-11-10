@@ -41,6 +41,7 @@
 
     });
 
-    content.appendChild(menuSection);
+    main.appendChild(menuSection);
+    content.appendChild(main);
 
 }

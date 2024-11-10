@@ -22,7 +22,7 @@ export function loadHomePage() {
 
     // img
     const image = document.createElement('img')
-    image.src = "images/restaurant-home-page.jpg";
+    image.src = "../images/restaurant-home-page.jpg";
     image.alt = "A view of our restaurant";
     main.appendChild(image);
 

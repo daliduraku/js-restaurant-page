@@ -55,7 +55,7 @@ main {
 }
 
 .main-background {
-    background-image: url("../images/restaurant-home-page.jpg");
+    background-image: url("../images/peaches.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -72,6 +72,13 @@ main h2 {
 main p {
     font-size: 18px;
     line-height: 1.5;
+}
+
+.summary {
+    padding: 10px;
+    text-decoration: solid;
+    color: black;
+    font-weight: 900;
 }
 
 /* menu content*/

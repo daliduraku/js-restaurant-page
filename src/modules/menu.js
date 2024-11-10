@@ -26,6 +26,7 @@
 
     menuItems.forEach((item) => {
         const itemContainer = document.createElement('div');
+        itemContainer.classList.add("namePlate")
         const itemName = document.createElement('h3');
         itemName.textContent = item.name;
         const itemDescription = document.createElement('p');

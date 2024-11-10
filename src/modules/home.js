@@ -8,6 +8,8 @@ export function loadHomePage() {
 
     // main section
     const main = document.createElement('main');
+    main.classList.add('main-background');
+
 
     // name of the restaurant
     const restaurantName = document.createElement('h1')
@@ -19,12 +21,13 @@ export function loadHomePage() {
     description.textContent = "Experience the finest dining with our exquisite menu crafted by amazing chefs."
     main.appendChild(description);
 
-
+    /*
     // img
     const image = document.createElement('img')
     image.src = "../images/restaurant-home-page.jpg";
     image.alt = "A view of our restaurant";
     main.appendChild(image);
+    */
 
     // hours of operation
     const schedule = document.createElement('section');

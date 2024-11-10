@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -59,11 +58,14 @@ main {
     text-align: center;
 }
 
-main img {
-    max-width: 100%;
-    height: auto;
-    margin: 20px 0;
+.main-background {
+    background-image: url("../images/restaurant-home-page.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
+
 
 main h2 {
     margin-top: 40px;
@@ -94,8 +96,10 @@ footer {
     text-align: center;
     padding: 15px 0;
     position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
+
 }
 
 /* responsive design */

@@ -39,8 +39,7 @@ nav button {
     transition: background-color 0.3s, border-color 0.3s;
 }
 
-nav button:hover,
-nav button.active {
+nav button:hover {
     background-color: #fff;
     color: #333;
     border-color: #333;

@@ -41,5 +41,6 @@ export function loadAboutPage () {
     main.appendChild(chefSection);
     main.appendChild(ambiance);
 
-
+    // append main to content
+    content.appendChild(main)
 }

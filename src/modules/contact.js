@@ -45,4 +45,47 @@ export function loadContactPage() {
     contactInfo.appendChild(emailAddress);
 
 
+    // form section 
+    const formSection = document.createElement('section');
+    formSection.classList.add('contact-form');
+
+    // form 
+    const form = document.createElement('form');
+    form.method = "POST";
+    form.action = "submit_form.php";
+
+    // label and input for name
+    const labelName = document.createElement('label');
+    labelName.for = "name";
+    labelName.textContent = "Your Name";
+    const nameInput = document.createElement('input');
+    nameInput.type = "text";
+    nameInput.id = "name";
+    nameInput.name = "name";
+
+    // label and input for email
+
+    const labelEmail = document.createElement('label');
+    labelEmail.for = "email";
+    labelEmail.textContent = "Your Email";
+    const emailInput = document.createElement('input');
+    emailInput.type = "email";
+    emailInput.id = "email";
+    emailInput.name = "email";
+
+    // label and input for message 
+
+    const labelMessage = document.createElement('label');
+    labelMessage.for = "message";
+    labelMessage.textContent = "Your message";
+    const messageInput = document.createElement('textarea');
+    messageInput.id = "message";
+    messageInput.name = "message";
+    messageInput.rows = "5";
+
+    // button for submit 
+    const submit = document.createElement('button');
+    submit.type = "button";
+    submit.textContent = "Send Message";
+
 }

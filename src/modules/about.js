@@ -10,7 +10,7 @@ export function loadAboutPage () {
     // creating the about section title
     const about = document.createElement('div');
     about.classList.add('about');
-    const aboutTitle = document.createElement('h1');
+    const aboutTitle = document.createElement('h2');
     aboutTitle.textContent = "About Us";
     const welcome = document.createElement('p');
     welcome.textContent = "Founded by Molla with a passion for food and a vision to create a gathering place for food lovers, Peaches has grown from a small neighborhood gem to one of the city's favorite dining destinations. Inspired by the traditions of Dardania, our dishes celebrate authenticity, freshness, and creativity.";

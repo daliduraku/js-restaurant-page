@@ -136,6 +136,52 @@ footer {
 
 }
 
+/* about section */
+.aboutMain {
+    background-image: url("../images/peaches.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.aboutMain h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.aboutMain p {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.chef-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.chef-container img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.chef-container h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: #555;
+}
+
 /* responsive design */
 @media (max-width: 800px){
     nav {

@@ -5,6 +5,7 @@ export function loadAboutPage () {
     content.innerHTML = "";
     // create the main section 
     const main = document.createElement('main');
+    main.classList.add('aboutMain');
 
     // creating the about section title
     const about = document.createElement('div');
@@ -30,11 +31,11 @@ export function loadAboutPage () {
     // our ambiance
     const ambiance = document.createElement('div');
     ambiance.classList.add('ambiance');
-    const ambianceTitle = document.createElement('h3');
+    const ambianceTitle = document.createElement('h2');
     ambianceTitle.textContent = "Our Ambiance";
     const ambianceDescription = document.createElement('p');
     ambianceDescription.textContent = "Peaches, we believe that a memorable dining experience extends beyond just great food. Our interiors are designed to be inviting and elegant, with warm lighting, comfortable seating, and a decor that reflects our restaurant’s unique personality. Whether you’re here for a casual meal or a special occasion, we aim to make every visit exceptional.";
-    ambiance.appendChild(aboutTitle);
+    ambiance.appendChild(ambianceTitle);
     ambiance.appendChild(ambianceDescription);
 
     main.appendChild(about);
@@ -42,5 +43,5 @@ export function loadAboutPage () {
     main.appendChild(ambiance);
 
     // append main to content
-    content.appendChild(main)
+    content.appendChild(main);
 }

@@ -66,6 +66,10 @@ main {
     width: 100vw;
 }
 
+main h1 {
+    padding-top: 20px;
+}
+
 
 main h2 {
     margin-top: 40px;

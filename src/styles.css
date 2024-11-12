@@ -187,6 +187,66 @@ footer {
     color: #555;
 }
 
+/* contact section */
+
+.contact-main {
+    padding: 2rem;
+    margin: 0 auto;
+    color: #333;
+    background-image: url("../images/peaches.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-info, .contact-form {
+    margin-bottom: 2rem;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;     
+    margin: 0 auto;
+}
+
+.contact-form label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #8a2be2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #7a1bd2;
+}
+
 /* responsive design */
 @media (max-width: 800px){
     nav {

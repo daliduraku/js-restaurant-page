@@ -9,7 +9,7 @@ export function loadContactPage() {
 
     // main section of the content page
     const main = document.createElement('main');
-    main.classList.add('contact-info');
+    main.classList.add('contact-main');
 
     // contact title 
     const contactTitle = document.createElement('h1');
@@ -53,6 +53,7 @@ export function loadContactPage() {
     const form = document.createElement('form');
     form.method = "POST";
     form.action = "submit_form.php";
+    
 
     // label and input for name
     const labelName = document.createElement('label');
@@ -62,6 +63,8 @@ export function loadContactPage() {
     nameInput.type = "text";
     nameInput.id = "name";
     nameInput.name = "name";
+    form.appendChild(labelName);
+    form.appendChild(nameInput);
 
     // label and input for email
 
@@ -72,6 +75,8 @@ export function loadContactPage() {
     emailInput.type = "email";
     emailInput.id = "email";
     emailInput.name = "email";
+    form.appendChild(labelEmail);
+    form.appendChild(emailInput);
 
     // label and input for message 
 
@@ -82,10 +87,18 @@ export function loadContactPage() {
     messageInput.id = "message";
     messageInput.name = "message";
     messageInput.rows = "5";
+    form.appendChild(labelMessage);
+    form.appendChild(messageInput);
 
     // button for submit 
     const submit = document.createElement('button');
     submit.type = "button";
     submit.textContent = "Send Message";
+    form.appendChild(submit);
+
+    formSection.appendChild(form);
+    main.appendChild(contactInfo);
+    main.appendChild(formSection);
+    content.appendChild(main);
 
 }

@@ -6,17 +6,26 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true, // This option cleans up the output directory before each build
+    clean: true,
+  },
+  mode: 'development', // Ensure mode is set to development
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/template.html', // Your main HTML template
+      template: './src/template.html',
     }),
   ],
   devServer: {
     static: path.resolve(__dirname, 'dist'),
     port: 8080,
+    hot: true, // Enable Hot Module Replacement (HMR)
   },
-  mode: 'development',
 };
 

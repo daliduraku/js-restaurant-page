@@ -8,7 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
-  mode: 'development', // Ensure mode is set to development
+  mode: 'development', // Required for hot-reloading
   module: {
     rules: [
       {
@@ -25,7 +25,9 @@ module.exports = {
   devServer: {
     static: path.resolve(__dirname, 'dist'),
     port: 8080,
-    hot: true, // Enable Hot Module Replacement (HMR)
+    hot: true, // Enables Hot Module Replacement (HMR)
+    open: true, // Opens browser on server start
   },
 };
+
 

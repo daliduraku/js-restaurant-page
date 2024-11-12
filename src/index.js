@@ -3,6 +3,7 @@ import { loadHomePage } from './modules/home.js';
 import { loadMenuPage } from './modules/menu.js';
 import { loadAboutPage } from './modules/about.js';
 import { loadContactPage } from './modules/contact.js';
+import './styles.css';
 
 document.addEventListener("DOMContentLoaded", () => {
     loadHomePage();

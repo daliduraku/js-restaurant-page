@@ -1,3 +1,4 @@
+import chefImage from '/images/chef.jpg';
 
 export function loadAboutPage () {
     const content = document.getElementById('content');
@@ -21,7 +22,7 @@ export function loadAboutPage () {
     const chefSection = document.createElement('div');
     chefSection.classList.add('chef-container');
     const image = document.createElement('img');
-    image.src = "../images/chef.jpg";
+    image.src = chefImage;
     image.alt = "Chef of Peaches"
     const chefExp = document.createElement('p');
     chefExp.textContent = "Chef Molla brings over 11 years of experience to Peaches, mastering the art of dardanian cuisine and working with the finest ingredients. Known for his creativity, Chef Molla ensures that each dish served is a true work of art."
